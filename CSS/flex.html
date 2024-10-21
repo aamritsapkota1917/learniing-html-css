@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/D8FlUjww-nfFO14zXuokI6xryryPjQXZoZ25KS5TlsA/rs:fit:573:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/TkZLS2c0TGlXT2RS/cWdPekdRWFFnSGFH/SSZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/D8FlUjww-nfFO14zXuokI6xryryPjQXZoZ25KS5TlsA/rs:fit:573:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/TkZLS2c0TGlXT2RS/cWdPekdRWFFnSGFH/SSZwaWQ9QXBp">
+    <!-- flex use hamro block element autai line ma linu xa vane flex use hunxa  
+
+(.demo*6)= garyo vani 6 ota division awuxa 
+
+    class ko name chai same huna sakxa-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-demo{
+            background-color: rgb(138, 248, 248);
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            /* justify-content:space-between; */
+            justify-content: space-around;
+
+
+        }
+            /* space between = bich bichma gap launa lai use hunxa */
+
+
+            /* spacing milauna lai (justifycontent) use garni yo chai flex use garesi matra use garna milxa , asle horizontal axix ma matra kam garxa 
+
+            fresh wrap= chai jati  width  px use hunxa teti use garna, content kunchera na auna lai use hunxa flex wrap,autai line ma auna lai =display flex use hunxa  */
+
+            /* box lai horizintally banauna lali=flex use garni  ,
+             flex= block elemet lai enline elememt ma lani  ,
+             flex jaile ni parent ma banauni 
+         */
+
+        
+        .container-demo .demo{
+            height: 300px;
+            width: 300px; 
+            background-color: rgb(231, 231, 243);
+            margin: 10px 0;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container-demo">
+        <div class="demo">
+            <img src="https://imgs.search.brave.com/VXtoUD91HhGWT-oOl8t2oXDp2Fqo4FJosxifVW6t6mU/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC43/cGQ5eU01YXFNeklR/MW9YTTJNNE53SGFI/YSZwaWQ9QXBp" alt="">
+        </div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+    
+    
+</body>
+</html>

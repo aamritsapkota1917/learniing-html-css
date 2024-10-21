@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/pQL0LFKx3vkY4AFG1F9B_IbXiYBnBGvOxu6pyZrKUHg/rs:fit:327:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/VVJuSjhqSmp4aWFx/TnVXMkV5ZTV3SGFL/dCZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/pQL0LFKx3vkY4AFG1F9B_IbXiYBnBGvOxu6pyZrKUHg/rs:fit:327:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/VVJuSjhqSmp4aWFx/TnVXMkV5ZTV3SGFL/dCZwaWQ9QXBp">
+    <style>
+        .demo{
+            height: 400px;
+            width: 600px;
+            background-color:#DFFF00 ;
+            /* auta content vanda arko content mathi rakna paryo vani  position relative
+            afno position jha thyo tyo vanda ali ata uta move hunxa  */
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+            
+        }
+        .box{
+            height: 300px;
+            width: 30px;
+            background-color: rgb(27, 56, 81);
+        }
+        /* asle body ko respect ma kam garxa
+        position ma matra jun chai suru ma rakyo tai lai priority dinxa overwrite gardaina */
+        .absolute-position{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color:#00FF00 ;
+            position: absolute;
+            /* top: 0; */
+            bottom: 0;
+            right: 0;
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- use for alingment -->
+    <pre>
+    1.static position
+    default position
+    static vaneko change na huni 
+
+    2.relative position
+    3.absolute position
+    4.sticky position
+    5.fixws position    
+    </pre>
+
+    <h2>Relative position</h2>
+    <!-- afule afali laai reference lera move huni 
+    website ko logo anusar website ko logo ni testai raknu parxa arko rakna painna  
+kunai pani define div ko parent xaina vani body ko respect ma kamm garxa -->
+    <div class="demo"></div>
+    <div class="box"></div>
+    <div class="absolute-position"></div>
+
+    
+</body>
+</html>

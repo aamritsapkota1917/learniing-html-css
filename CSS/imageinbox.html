@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        .container{
+            height: 300px;
+            width: 500px;
+            border: 5px solid red;
+            margin: auto;
+            overflow: hidden;
+            /* overflow hidden chai image baira na jawos vanera rakaya  */
+        }
+        /* container img rakera image size box anusar milauni */
+        .container img{
+            height: 100%;
+            width: 100%;
+            transition: all 3s;
+
+        }
+        /*image zooom in zoom out garna lai hover use vaxa ,transform scale ko value 1.0 vanda mathi zoom in ani 1.0 vanda muni vaya zoom out  ,scale ko default value 1.0 ho  */
+        .container:hover img{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/Klc8WfeclyQQ2CDgiRpPAxMfJ-OpqqbQzCouvJIWurI/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4w/WjhKSzc4YWZZeHRC/RFdaeEQzaW1nSGFI/YSZwaWQ9QXBp" alt="">
+
+    </div>
+</body>
+</html>

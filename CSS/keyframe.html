@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/rW7uItrBYyrlTQhFoj-mSKctqnzYfSNREfVdd61NQfU/rs:fit:229:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/SUpWcTlwVG9FS1pm/RXE1aE1VcFB3SGFQ/VSZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/rW7uItrBYyrlTQhFoj-mSKctqnzYfSNREfVdd61NQfU/rs:fit:229:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/SUpWcTlwVG9FS1pm/RXE1aE1VcFB3SGFQ/VSZwaWQ9QXBp">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+        .container{
+            height: 100px;
+            width: 200px;
+            margin: 20px auto 0;
+            animation: up-down 2s ease-in-out infinite alternate-reverse;
+            /* is inout =bistarai auni bistarai jani,  
+            chaleko chalai banauna lai =infinite,
+            mathi gayara sarra tala ako banauna lai =alternate-reverse  */
+
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+        }
+        /* key frame ma % ma kam hunxa 0% to 100%
+        25% =translateX
+          */
+        @keyframes up-down{
+            0%{
+                transform: translateY(50px);
+
+            }
+            25%{
+                transform: translateX(50px);
+            }
+            50%{
+                transform: translateY(50px);
+            }
+            75%{
+                transform: translateX(50px);
+            }
+            100%{
+                transform: translateY(50px);
+            }
+        
+            
+            /* yo keyframe eakchoti matra na gunauma ko lagi =  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/Om8j0IE7Om6KdjhJ_mCgzxUsJxX67od3nZ52TrUoQy0/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/dWh6SExXSFlzdHhZ/dG9lMi15dHpnSGFF/SyZwaWQ9QXBp" alt="">
+    </div>
+    
+</body>
+</html>

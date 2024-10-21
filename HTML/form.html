@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/wufmlcgDZeddisTlrJd8mgJWHIxPn2QCevmLoNJhp3w/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/QmVpRUlRZlJWNHo5/d3RFYkJqWm53SGFF/OCZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/wufmlcgDZeddisTlrJd8mgJWHIxPn2QCevmLoNJhp3w/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/QmVpRUlRZlJWNHo5/d3RFYkJqWm53SGFF/OCZwaWQ9QXBp">
+</head>
+<body>
+    <form action="">
+        <label for="firstname">FIRSTNAME</label>
+        <br/>
+<!-- form fill garna lai =input 
+for ma ra id ma lekeko value same hunu parxa
+fname vaneko data base ma value pathauna lai 
+id chai validation ko lagi
+placeholder ma lekeko kura transparent tex-->
+        <input type="text" name="fname" id="firstname" placeholder="your firstname">
+        <br/>
+        <label for="middlename">MIDDLE NAME</label>
+        <br/>
+        <input type="middlename" name="fmid" id="middlename" placeholder="middlename">
+        <br>
+        <label for="lastname">LASTNAME</label>
+        <br/>
+       <input for="lastname" name="lname" id="lastname" placeholder="your lastname"></input>
+       <br/> 
+       <label for="address">ADDRESS</label>
+       <br/>
+       <input type="address" name="faddress" id="address" placeholder="your address">
+       <br> 
+       <label for="contact">CONTACT NUMBER</label>
+       <br/>
+       <input type="contact" name="fcontact" id="contact" placeholder="contact number">
+       <br/>
+       <label for="email">EMAIL</label>
+       <br/>
+       <input type="email" name="fmail" id="email" placeholder="example@example.com">
+       <br/>
+<!-- id ra for same hunu parxa aru farak pardaina ani
+email ma @ and . raknu parxa  -->
+<!-- for raknu pardaina 
+input ko type ma rdio hunxa  -->
+        
+        <label>GENDER</label>
+        <br>
+        <input type="radio" name="gender" value="male"checked>Male
+        <!-- checked last ma jun halyo tai select hunxa
+        -->
+        <br>
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <input type="radio" name="gender" value="other">Other
+        <br>
+    <label for="dob">DATE OF BIRTH</label>
+    <br>
+    <input type="date" name="dob" id="dob">
+    <br>
+    <label for="pwd">PASSWORD</label>
+    <br>
+    <input type="password" name="pwd" id="pwd">
+    <br>
+    <input type="submit" value="send">
+    <!-- button ko text k rakni vanera value ma lekxa 
+    id ko valudation ko lagi 
+    value database  ma data ko lagi
+    -->
+        
+
+</form>
+</body>
+</html>

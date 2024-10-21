@@ -1,0 +1,137 @@
+*{
+    
+    box-sizing: border-box;
+    background-color: rgb(247, 250, 247);
+}
+.demo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ .demo .box{
+    margin-top: 10%;
+    height: 250px;
+    width:23%;
+    
+    background-color: rgb(235, 231, 248);
+    box-shadow : 0 0 15px  rgba(182, 189, 238, 0.5);
+    position: relative;
+    
+    
+}
+.box .top1{
+    height: 35%;
+    
+    background: linear-gradient(to right, rgb(235, 195, 121),rgb(164, 238, 164));
+    padding-top: 40px;
+    padding-left: 80px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    /* background-repeat: no-repeat;
+    background-size: contain; 
+    background-position:center;
+    background-attachment: fixed; */
+    
+}
+.top1:hover{
+    background-color: black;
+}
+.box .top2{
+    height: 35%;
+    
+    background: linear-gradient(to right, rgb(158, 69, 170),rgb(113, 130, 241));
+     padding-top: 10px;
+    padding-left: 50px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* font-size: 20px; */
+
+}
+.box .top3{
+    height: 35%;
+    
+    background: linear-gradient(to right, rgb(219, 115, 235),rgb(239, 140, 79));
+    padding-top: 30px;
+    padding-left: 80px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    
+}
+.box .top4{
+    height: 35%;
+    
+    background: linear-gradient(to right, rgb(239, 135, 243),rgb(116, 113, 238));
+    padding-top: 20px;
+    padding-left: 80px;
+    
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+.box .buttom1{
+    height: 65%;
+    padding-top: 35px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+
+}
+.box .buttom1 p{
+    color: rgb(180, 175, 175);
+    font-size: 10px;
+    padding-top: 40px;
+    font-style: oblique;
+}
+.box .buttom2{
+    height: 65%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.box .buttom2 p{
+    color: rgb(180, 175, 175);
+    font-size: 10px;
+    padding-top: 55px;
+    font-style: oblique;
+}
+
+
+.box .buttom3{
+    height: 65%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.box .buttom3 p{
+    color: rgb(180, 175, 175);
+    font-size: 10px;
+    padding-top: 40px;
+    font-style: oblique;
+}
+.box .buttom4{
+    height: 65%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.box .buttom4 p{
+    color: rgb(180, 175, 175);
+    font-size: 10px;
+    padding-top: 40px;
+    font-style: oblique;
+}
+.checked{
+    color:rgb(252, 244, 15);
+    
+    
+}

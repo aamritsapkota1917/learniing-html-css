@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/Wz2gwqrDGs9246mVSRG7XhcEwL2ftz59lfJf0XMtFyI/rs:fit:355:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/WUduVHUyRHpNS3E5/UXBibnlrNkp3SGFK/NCZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/Wz2gwqrDGs9246mVSRG7XhcEwL2ftz59lfJf0XMtFyI/rs:fit:355:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/WUduVHUyRHpNS3E5/UXBibnlrNkp3SGFK/NCZwaWQ9QXBp">
+</head>
+<body>
+    
+    <form action=""autocomple="off">
+        <fieldset>
+            <legend>fill out the field</legend>
+            <!-- fieldset box auna lai  -->
+    <label for="fullname">fullname</label>
+    <input type="text" name="fname" id="fullname" placeholder="yours fullname" required>
+    <!-- fill garna lai required -->
+    <br/>
+    <label for="email">EMAIL</label>
+    <br/>
+    <input type="email" name="email" id="email">
+    <br>
+    <label>GENDER</label>
+    <input type="radio" name="gender" value="male" checked>Male
+    <!-- auta select garna checked use hunxa  -->
+    <input type="radio" name="gender"value="female">female
+    <input type="radio" name="gender" value="other">other
+    <br/>
+    <label>choose any two</label>
+    <br>
+    <input type="checkbox" name="subject" value="graphics">graphics
+    <input type="checkbox" name="subject" value="web">web
+    <input type="checkbox" name="subject" value="software">software
+    <input type="checkbox" name="subject" value="networking">networking
+    <br>
+    <!-- mutiple option select garna lai  input checkbox -->
+    <label for="districts">district</label>
+    <select name="district" id="districts">
+        <!-- slelct =multiple option select garna lai districts ko 
+        agadi khali rakyo vani chai default option empty hunxa natra suru ma jun xa tai default dekauxa -->
+        <option value=""></option>
+        <option value="kathmandu">kathmandu</option>
+        <option value="lalitpur">lalitpur</option>
+        <option value="bhaktapur">bhaktapur</option>
+        <option value="dhading">dhading</option>
+        <option value="kaski">kaski</option>
+        <option value="rukum">rukum</option>
+        <option value="rolpa">rolpa</option>
+    </select>
+    <br>
+    <label for="dob">date of birth</label>
+    <input type="date" name="dob" id="dob">
+    <br>
+    <label for="phone">phone number</label>
+    <br>
+    <input type="tel" name="phone" id="phone">
+    <br>
+    <label for="zip">zip code</label>
+    <br>
+    <input type="number" name="zip" id="zip">
+    <!-- number matra type hunxa zip ma and e=exponential  -->
+    <br>
+    <!--upload= file upload garna lai  -->
+    <label for="upload">file upload</label>
+    <br>
+    <input type="file" name="upload" id="upload">
+    <br>
+    <!-- msg= lekna lai msg -->
+    <label for="msg">Message</label>
+    <br>
+    <!-- textarea= msg lekni box ko lagi -->
+    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+    <br>
+    <label for="pwd">password</label>
+    <br>
+    <input type="pwd" name="pwd" id="pwd">
+    <br>
+    <label for="search">search</label>
+    <br>
+    <input type="search" name="search" id="search">
+    <br>
+    <input type="submit" value="submit">
+    <br>
+    <input type="reset" value="reset">
+    <br>
+</fieldset>
+
+    </form>
+</body>
+</html>

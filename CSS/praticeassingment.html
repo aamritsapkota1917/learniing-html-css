@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 300px;
+            width: 400px;
+            box-shadow: 0 0 20px rgb(44, 39, 39);
+            margin: auto;
+            position:relative;
+            /* relative position ramro ho  */
+
+        }
+        .box .overlay{
+            background-color: rgba(52, 51, 51, 0.8);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            /* parent ko relative ma kam garexa vani top bottom left right left o rakni asle sabai cover garxa
+            display none =hide hunxa box */
+        }
+        .box:hover .overlay{
+            display: block;
+        }
+        .overlay p{
+            color: #ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>devops certification tranning course </h3>
+<div class="overlay">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+    </div>
+
+</body>
+</html>

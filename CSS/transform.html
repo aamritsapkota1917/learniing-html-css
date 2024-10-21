@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(100, 238, 137);
+            transition: all 1s;
+            /* +ve(1) rakyo vani tala janxa, -ve(-1) value rakyo vani mathi janxa */
+        }
+        .container:hover{
+            transform: translateY(20px);
+        }
+
+        .container:hover{
+        transform: translateX(20px);
+        }
+        /* .container:hover{
+            transform: translate(200px);
+        } */
+        .demo{
+            height: 300px;
+            width: 150px;
+            background-color: rgb(94, 242, 242);
+            margin-top: 40px;
+            transform: skewY(-45deg);
+            transform: rotate(90deg);
+            /* transform: skewX(-45deg);
+            transform: skew(45deg); */
+            /* skew ma degree ma kam hunxa  */
+        }
+
+        </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="demo"></div>
+</body>
+</html>

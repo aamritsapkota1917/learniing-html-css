@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute position</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .demo{
+        height: 300px;
+        width: 600px;
+        margin: auto;
+        position: relative;
+
+    }
+    /* image milera launa lai  */
+    .demo img {
+        height: 100%;
+        width: 100%;
+    }
+    .demo .btn{
+        background-color: orange;
+        color:#151302 ;
+        border: none;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        position: absolute;
+        left: 37%;
+        top: 40%;
+        display: none;
+        /* display none= vanaya tyo button hide garni ani, display block =vanaya hide vako lai hover garera dekauni  */
+        
+    }
+    .demo:hover .btn{
+        display: block;
+        top: 40%;
+    }
+    /* vedio ko play button jastai bich ma rakna paryo vani parent ma position define garni like demo ma position relative rakni ani child ma position absolute*/
+</style>
+
+</head>
+<body>
+    <pre>when there is a parent and its position is defined</pre>
+    <div class="demo">
+        <img src="https://imgs.search.brave.com/q1fkwbzhY2StPkSxqTIVhFNFx3-5n7AZCkK6tiRHM4g/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5m/S0JRVGpvNXFiS3pi/NjJVLXgxV1NBSGFF/SyZwaWQ9QXBp" alt="">
+        <button class="btn">view details </button>
+        <!-- button.left lekni ani lt=less than reason colour milauna -->
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+    
+</body>
+</html>

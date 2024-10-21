@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web layout using flex</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/U_hFToRCMo_QBnzAp9Pf_a_7NM7hsxyAqApjPt7I6dU/rs:fit:592:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/U0tsLVMtbHhpSUxW/QmtJRV8ycjlRSGFG/NyZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/U_hFToRCMo_QBnzAp9Pf_a_7NM7hsxyAqApjPt7I6dU/rs:fit:592:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/U0tsLVMtbHhpSUxW/QmtJRV8ycjlRSGFG/NyZwaWQ9QXBp">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(24, 117, 231);
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            text-align:center;
+            padding: 0;
+            text-align:center;
+            align-items: center;
+        overflow:auto;
+
+        
+        
+        }
+        .container h3{
+            font-size: 3opx;
+            width: 45%;
+            color: rgb(241, 248, 248);
+        }
+        .container .hero.img{
+            height: 80%;
+            width: 80%;
+        }
+        .hero.img img{
+            height: 80%;
+            width: 80%;
+        }
+         .container:hover img{
+            
+            transform: scale(0.8);
+            transition: all 1s;
+
+        } 
+        .container-demo{
+            display: flex;
+            flex-wrap:wrap-reverse;
+            justify-content:space-around;
+
+        }
+        .container-demo .demo{
+            height: 300px;
+            width: 300px; 
+            margin: 10px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>  Better Solution For <br/> Your Business
+            <br/>
+            <small>
+                 We are team of talented designer making 
+            <br/>
+            websites with Bootstrap.
+            </small>
+        </h3>
+        
+        <div class="hero img">
+            <img src="https://imgs.search.brave.com/bIb0MD-VF6Y729t8AjYphOMg_XoXOu1Vbfi0yBSr0OE/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5a/MHhMbzNUal9HY2JW/VlM5VWVtZzZBSGFG/aiZwaWQ9QXBp" alt="">
+        </div>
+        
+   
+    </div>
+</body>
+</html>

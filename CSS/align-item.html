@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/OUkByehov_2zy0yVbFiLsam8dHhl7_6ky_Nes0rb8jg/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/Ql9oUm80c3J1QVRY/YnE0NXFpYmhnSGFF/byZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/OUkByehov_2zy0yVbFiLsam8dHhl7_6ky_Nes0rb8jg/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/Ql9oUm80c3J1QVRY/YnE0NXFpYmhnSGFF/byZwaWQ9QXBp">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 80%;
+            margin:auto ;
+            box-shadow: 0 0 15px rgba(67, 127, 238, 0.5);
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            align-items: center;
+            text-align: justify;
+/* align-items:flex-end ,asle text ko position tha hunxa ;
+align-items: flex-start; 
+
+asma jun last ma xa tai execute hunxa kina ki overwrite hunxa code */
+
+ /* flex-wrap: wrap; */
+ /* autai line ma launa lai flex use vako  */
+ /*  justify-contently evenly =asle tala mathi gap dekiayana jodiayara ayo pictures */
+
+        }
+        .container h3{
+            font: size 30px; 
+            width: 45%;
+            color:rgba(13, 44, 246, 0.6)
+           
+            
+        }
+        .container .hero.img{
+         height: 300px;
+         width: 50%;
+        }
+        .hero.img img{
+            height: 100%;
+            width: 100%;
+        }
+        .container:hover h3{
+            color: rgb(13, 44, 246);
+            transition: all 2s;
+        }
+        .container.container:hover{
+            background-color: rgb(200, 249, 249);
+            transition: all 1s;
+            /* transition le slow motion ma effect lauxa  */
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        align item works in y axis 
+        there must be size different between two element for align items and it always work with respect high size element
+    </pre>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, soluta.</h3>
+        <div class="hero img">
+            <img src="https://imgs.search.brave.com/dzJwkX1wa2uCXnvypcue4Q9HI3-5qViM5lboXJfojog/rs:fit:748:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/YlZKS0RmcXhodU1f/UUdwQUZkZnZnSGFF/cyZwaWQ9QXBp" alt="">
+        </div>
+    </div>
+</body>
+</html>

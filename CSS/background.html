@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroung</title>
+    <title>background-> gradient and image </title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/R-Z4_Jjw-FBHpXlb-mLaM3bS4xbyqXImJA52vKuVrhU/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4y/bTFxc3RiZnZfaHRZ/eWhFd3dYdzB3SGFI/YSZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/R-Z4_Jjw-FBHpXlb-mLaM3bS4xbyqXImJA52vKuVrhU/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4y/bTFxc3RiZnZfaHRZ/eWhFd3dYdzB3SGFI/YSZwaWQ9QXBp">
+    <style>
+        .container{
+            height: 400px;
+            /* height desi width automatic block element ma 100% hunxa  */
+            /* background: linear-gradient(to right, red,blue,green); */
+            /* color auta vanda vadi hunu parxa
+             color ko direction top to bottom xa change garna lai chai (to right) = (automatic left to right bujxa) lekni color ko agi ani comma dini */
+             /* background: linear-gradient(to top right, red,blue,green); */
+             /* background: linear-gradient(to bottom right, red,blue,green); */
+             /* background: linear-gradient(to top left, red,blue,green); */
+
+             /* radial gradient afai herni  */
+/* background ma image halna lai = background image ani url lekni ani url ma image ko source dini ho  */
+
+             /* background-image: url('https://imgs.search.brave.com/q1fkwbzhY2StPkSxqTIVhFNFx3-5n7AZCkK6tiRHM4g/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5m/S0JRVGpvNXFiS3pi/NjJVLXgxV1NBSGFF/SyZwaWQ9QXBp'); */
+
+/* asma auta color vanda duita hunu parxa composary */
+
+             background-image: linear-gradient(rgba(185, 252, 185, 0.5),rgba(167, 252, 167, 0.5)),url(https://imgs.search.brave.com/q1fkwbzhY2StPkSxqTIVhFNFx3-5n7AZCkK6tiRHM4g/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5m/S0JRVGpvNXFiS3pi/NjJVLXgxV1NBSGFF/SyZwaWQ9QXBp);
+
+             /* image repeat huna a dina = background repeat no repeate */
+             background-repeat:no-repeat;
+             /* asko fullssize cover garna lai
+              = background size cover rakni */
+              /* cover le width cover garxa vani  */
+              /* contain le image jatro thulo xa teti awuxa */
+              background-size:contain;
+              /* image ko kha ko dekauna lai background position
+               = yo (center) vano vani image ko center part dekinxa vanaya ho  */
+              background-position:center;
+              /* image fix vako hunxa tara text move vako hunxa tesko lagi chai background attachment =fix  */
+              background-attachment: fixed;
+
+
+        }
+/* background image ma gradient pani rakna ko lagi  */
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    
+</body>
+</html>

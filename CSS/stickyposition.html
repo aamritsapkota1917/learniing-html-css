@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* header tag ma dot lekna pardena  */
+        header{
+            height: 50px;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            /* letter bich space dina lai justify content use gareko  */
+            justify-content: space-around;
+            align-items:center;
+            color: rgb(37, 37, 38);
+
+        }
+        nav{
+            /* height: 30px; conten rakeko bela height raknna painnna */
+            background-color: rgb(248, 177, 83);
+            /* position sticky le navigation bar lai stick garayara rakxa ani top 0 vaneko chai 0 samma sticky basxa  */
+            position: sticky;
+            top:0;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+        /* height ala mathi xa vani milauni align item le ho  */
+
+        /* display inline = block element lai inline element garauna paryo vani use hunxa
+        display block = inline element lai block element banauna paryo vani use hunxa */
+        nav ul li{
+            display: inline;
+            position: relative;
+        }
+        /* underline hatauna lai (text decoration) none rakni 
+        notes: inline element vitra inline element xa vani tesma padding top  buttom ra margin top buttom le kam gardaina  */
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(41, 40, 40);
+            font-size: 15px;
+            padding: 10px;
+            display: inline-block;
+
+        }
+        nav ul li .active{
+            color: rgb(228, 16, 76);
+        }
+        nav ul li a:hover{
+            color: rgb(243, 24, 24);
+            transform: scale(1.1);
+            transition: all 2s;
+        }
+        ul li .dropdown{
+            width: 110px;
+            background-color: rgb(249, 244, 237);
+            position:absolute;
+           
+/* yo left 0 vaneko parent ko jha left 0 xa tai child ko pani tai bata suru hunxa  */
+            left: 0;
+            display: none;
+
+
+        }
+        .dropdown .sub-dropdown{
+            background-color: rgb(235, 191, 191);
+            position: absolute;
+            width: 100px;
+            left: 100%;
+            display: none;
+            top: 0;
+        }
+        nav ul li:hover .dropdown{
+            display: block;
+
+        }
+        .dropdown li:hover .sub-dropdown{
+            display: block;
+        }
+                .main{
+            height: 700px;
+            /* background-color: aquamarine; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-around;
+        }
+        .main .box{
+            height: 300px;
+            width: 32%;
+            background-color:white;
+        
+            box-shadow:0 0 15px rgba(0, 0, 0,0.5);
+        }
+        footer{
+            height: 80px;
+            background-color: rgb(0,0,0);
+        }
+        @media screen and (max-width:992px) {
+            .contact{
+                width: 98%;
+            }
+            .social-media{
+                width: 98%;
+            }
+            .logo{
+                width: 98%;
+            }
+            .main{
+                background-color: bisque;
+            }
+            .main .box{
+                width: 48%;
+            }
+            header{
+                width: 100%;
+            }
+            nav{
+                width: 100%;
+            }
+            footer{
+                width: 100%;
+            }
+            li{
+                width: 100%;
+            }
+            
+        }
+        @media screen and (max-width:660px) {
+            .main{
+                background-color: blueviolet;
+            }
+            .main .box{
+            width: 98%;
+            }
+            .contact{
+                width: 48%;
+            }
+            .social-media{
+                width: 48%;
+            }
+            .logo{
+                width: 48%;
+            }
+            header{
+                width: 100%;
+            }
+            nav{
+                width: 100%;
+            }
+            footer{
+                width: 100%;
+            }
+            li{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contact">contact@gmail.com</div>
+        <div class="social">9860931864</div>
+    </header>
+    <!-- navigation var = nav 
+         navigation bar vitra auni content lai jaile pani (ul) ( vitra rakni ) 
+        kai pani janu xaina vani href vitra(#) rakni 
+    image ra content autai line ma auna lai nav lai display flex gardini -->
+
+    <nav>
+        <div class="logo">
+            <img src="image/client-4.png" alt="logo" width="45">
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home </a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#"> Category</a>
+<!-- category ko drop down list banauna lai chai list vitra list rakni
+ul.dropdowm-->
+            <ul class="dropdown">
+                <li><a href="#">Mobile</a>
+                <ul class="sub-dropdown">
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Nokia</a></li>
+                    <li><a href="#">Apple</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Laptop</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="#">Lenevo</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Apple</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fashion</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="#">Paint</a></li>
+                        <li><a href="#">Shirt</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LED</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="#">RED</a></li>
+                        <li><a href="#">GREEN</a></li>
+                        <li><a href="#">BLUE</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li><a href="#">Gallery </a></li>
+             <li><a href="#">About</a></li>
+            <li><a href="#"> Contact</a></li>
+
+
+        </ul> 
+    </nav>
+    <section class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+    <footer></footer>
+</body>
+</html>

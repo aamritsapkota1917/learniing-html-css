@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    image-rendering: auto;
+}
+/* First page CSS */
+nav {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+nav h1{
+    padding-right: 20px;
+    text-align: left;
+    color: rgb(254, 247, 247);
+    font-size: 40px;
+
+}
+
+nav ul li {
+    display: inline;
+    /*block element lai in line laaunu paryo bhaney*/
+    position: relative;
+}
+
+nav ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(253, 249, 249);
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    /*block element lai in line laaunu paryo bhaney*/
+    position: relative;
+}
+
+
+nav ul li .active {
+    color: #a3c962;
+}
+
+nav ul li a:hover{
+    color: #a3c962;
+    transition: all 0.5s;
+}
+
+
+.first {
+    background-image: url(/CSS/image/officialforest.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+
+
+.first h4 {
+    padding-top: 10%;
+    color: rgb(241, 234, 234);
+    text-align: center;
+    font-size: 25px;
+}
+
+.first h5 {
+    padding-top: 20px;
+    color: rgb(252, 248, 248);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+.first p {
+    padding: 20px;
+    color: rgb(249, 243, 243);
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+
+}
+
+.btn button {
+    margin-top: 30px;
+    font-size: 15px;
+    border: none;
+    padding: 8px 20px;
+    border: rgb(103, 101, 101) solid;
+    border-radius: 20px;
+    color: #a3c962;
+}
+
+button.two {
+    color: rgb(244, 239, 239);
+    background-color: #a3c962;
+}
+
+button:hover.one {
+    background-color: black;
+    color: rgb(245, 238, 238);
+    transition: all 1s;
+}
+
+button:hover.two {
+    background-color: black;
+    color: rgb(236, 230, 230);
+    transition: all 1s;
+
+}
+
+/* CSS of second Page  */
+.second{
+    margin-top: 60px;
+}
+.second h6{
+    text-align: center;
+    font-size: 25px;
+    color: #a3c962;
+
+}
+.second h2{
+    padding-top: 10px;
+    text-align: center;
+}
+.second p{
+    padding: 25px;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about{
+    padding-left: 25%;
+    text-align: left;
+    margin-right: 40px;
+}
+.about h6{
+    font-size: 25px;
+    text-align: left;
+
+}
+.about h5{
+    font-weight: normal;
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: left;
+
+}
+.about p{
+    font-size: 20px ;
+    text-align: left;
+
+}
+.container img{
+    padding-left: 48%;
+    align-items: center;
+}
+/* End of second page  */
+/* start of third page  */
+.third {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding-left: 30%;
+    /* justify-content: space-evenly; */
+    /* position: relative; */
+    background-image: url(/CSS/image/forest\ new.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    
+}
+.third .title1{
+    text-justify: distribute;
+}
+.title1 p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    padding: 10px 0;
+    color: rgb(245, 238, 238);
+}
+.third .title2{
+    margin-right: 20px;
+    padding: 20px;
+    
+}
+.title2 h6{
+    color: #a3c962;
+    font-size: 25px;
+    padding: 20px;
+}
+.title2 h3{
+    font-size: 37px;
+    font-weight: 400;
+    color: rgb(244, 238, 238);
+    padding-left: 10px;
+    
+}
+.third .box{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(248, 245, 245);
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow:(0, 0,) ;
+}

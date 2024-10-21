@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <!-- style vaneko tag ho  
+    kunai text lai style garna paryo vani element bat garni jastai ki h1 
+kunai element ko name na dee style garna paryo vane element selector 
+font-size =le text ko size badauxa
+text-align= le text lai right ma or center ma lagxa
+-->
+   <!-- universal selector (*)-->
+   <style>
+
+        h1{
+            color: rgb(118, 7, 244);
+            font-size: 50px;
+            text-align: right;
+        }
+        /* class ko name dexa vane jaile ni suru ma dot hunxa 
+        text decoration= le underline rakna paryo vani*/
+        .demo-title{
+            color: aqua;
+            text-align: center;
+            text-decoration:underline ;
+
+        }
+        .text{
+            background-color: rgb(217, 168, 21);
+        }
+        #title{
+            color: aquamarine;
+        }
+        .demo-title,#title,h1{
+            text-transform: capitalize;
+
+        }
+ /* texttrasnform=lowercase capital  */
+ /* universal selector */
+        *{
+            font-family:Arial, Helvetica, sans-serif
+        
+        }
+        /* mostly arial use hunxa aha */
+    </style>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/dtvV4dkGjOiAk7itNHGjaAzORvvz4v5x2JDNSXuPG5s/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5S/eHZKakloVzNfRHBV/am1tbzNxWE9BSGFF/byZwaWQ9QXBp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://imgs.search.brave.com/dtvV4dkGjOiAk7itNHGjaAzORvvz4v5x2JDNSXuPG5s/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5S/eHZKakloVzNfRHBV/am1tbzNxWE9BSGFF/byZwaWQ9QXBp">
+</head>
+<body>
+
+    <h1>this is the element selector</h1>
+    <h1>heading one</h1>
+    <!-- class= vaneko attribute ho 
+    class= ma startring ki letter number lekna painna ra capital leteer hunna 
+ani space rakyo vane tesko kam chuttai hunxa 
+space desi tesko name nai farak hunxa -->
+    <h2 class="demo-title text">this is class selector</h2>
+    <h2>heading</h2>
+    <!-- id= ma single value an dunique value halni 
+    class ma jasto  space dina painna asma high preference chai id selector le pauxa -->
+    <h2 id="title">this is id selector</h2>
+    <!-- grouping selector=duita ko text autai chaio vane -->
+
+
+    
+</body>
+</html>

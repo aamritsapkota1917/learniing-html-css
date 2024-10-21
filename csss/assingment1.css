@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-container{
+    background-color: rgb(6, 6, 85);
+    /* height: 500px; */
+    color: rgb(227, 239, 250);
+    display: flex;
+    flex-wrap: wrap;
+    /* space launa lai justify content evenly */
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+/* left chai content bett solution tsxt ko lagi  */
+.hero-container .left{
+  width: 30%;
+
+}
+.hero-container .left h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    /* pratek word capital garauna lai  */
+}
+
+/* kunai text lai bold garna paryo vani font weight bold use garni  */
+.hero-container .left p{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.left button{
+    background-color: rgb(95, 203, 242);
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 50px;
+    /* text ko color edit garna color  */
+    color: rgb(224, 239, 252);
+    /* baira ko border curve garna lai border radius use vaxa , alll top left top right buttom  */
+    border-radius: 20px;
+    
+}
+.left a{
+    /* white color ko hax value (#fff ) */
+    color:white;
+    font-size: 25px;
+    margin-left: 20px;
+    /* uderline hatauna text decoration  */
+    text-decoration: none;
+
+    
+}
+.left a i{
+    font-size: 20px;
+    line-height: 5px;
+
+}
+/* right ko garna agi left ko sabai vauna parxa  
+right picture ko lagi  */
+.hero-container .right{
+    width: 30%;
+    height: 400px;
+    animation: up-down 2s infinite alternate-reverse;
+
+}
+.hero-container .right img {
+    height: 100%;
+    width: 100%;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+} 
+/* style of client section */
+
+.client-container{
+    background-color: rgb(245, 238, 238);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    /* tala mathi na ayos vanera align  */
+    align-items: center;
+    /* image lai dark garauna  */
+    
+    
+}
+.client-container .client{
+    width: 8%;
+    height: 40px;
+}
+.client img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1.5);
+}
+.client img:hover{
+    filter:none;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+/* style of services container 
+class name ma jaile . use hunxa ani element ko name ma p rakni  */
+.services-container{
+    text-align: center;
+    background-color: rgb(197, 197, 244);
+}
+.services-container h1{
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 5, 70);
+}
+.services-container p{
+font-size: 20px;
+text-align: center;
+padding: 20px;
+}
+.services-container .service-box{
+    width: 85%;
+    margin: 25px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-box .box{
+    width: 23%;
+    height: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+    margin-bottom:30px;
+    background-color:white;
+    padding: 30px;
+    color: rgb(35, 194, 238);
+    font-size: 50px;
+text-align:start;
+    
+}
+.service-box .paragraph{
+    color: black;
+}
+.service-box .box:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+.team-container{
+    background-color:rgb(197, 197, 244);
+
+}
+.team-container h1{
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.team-container p{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team-container .team-box{
+    width: 90%;
+    margin: 25px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.team-box .box{
+    width: 47%;
+    height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+    background-color:white;
+    padding: 15px;
+    color: rgb(5, 31, 38);
+margin-bottom: 30px;
+}
+.team-box .box:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+.box img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* padding-top: 30px; */
+}
+.box h3{
+    margin-top: 20px;
+    padding-left: 50px;
+    text-align: justify;
+    color: #37517e;
+    padding-left: 28%;
+}
+.box h4{
+    margin-top: 10px;
+    text-align: justify;
+    font-weight: normal;
+    padding-left: 28%;
+}
+.box p{
+    text-align: justify;
+    font-size: 17px;
+    padding-left: 28%;
+}
+.box a i{
+    margin-right: 20px;
+    font-size: 2opx;
+    margin-top: 10px;
+    padding: auto;
+}
+.box button{
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(249,246,242);
+}
+.box button:hover{
+    background-color: aquamarine;
+    transition: all 0.5;
+}
+/* css lai open with live server lina mildaina  */
